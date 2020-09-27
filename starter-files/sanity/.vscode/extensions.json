@@ -4,6 +4,7 @@
     "wesbos.theme-cobalt2",
     "formulahendry.auto-rename-tag",
     "graphql.vscode-graphql",
-    "jpoissonnier.vscode-styled-components"
+    "jpoissonnier.vscode-styled-components",
+    "coenraads.bracket-pair-colorizer-2"
   ]
 }
