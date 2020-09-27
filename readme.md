@@ -1,4 +1,4 @@
-![Master Gatbsy](https://res.cloudinary.com/wesbos/image/upload/c_scale,q_auto,w_1600/v1600356131/GAT-social-share_rxvhdg.png)
+![Master Gatsby](https://res.cloudinary.com/wesbos/image/upload/c_scale,q_auto,w_1600/v1600356131/GAT-social-share_rxvhdg.png)
 
 # Master Gatsby
 
@@ -10,4 +10,4 @@ This repo includes the starter files, stepped solutions and sample data for doin
 
 **Q:** How can I set a custom Emmet expand keyboard shortcut?
 
-**A:** In VS Code, you can go to `File` -> `Preferences` -> `Keyboard Shortcuts` (Windows, Linux) or `Code` -> `Preferences` -> `Keyboard Shortcuts` (Mac). Search for `Emmet Expand Abbreviation` and you should see the current keyboard shortcut there. Double-click on the current key-bind to set a new keyboard shortcut. I have mine set to `Ctrl` + `E` which I really like but you can pick any combo you like! 
+**A:** In VS Code, you can go to `File` -> `Preferences` -> `Keyboard Shortcuts` (Windows, Linux) or `Code` -> `Preferences` -> `Keyboard Shortcuts` (Mac). Search for `Emmet Expand Abbreviation` and you should see the current keyboard shortcut there. Double-click on the current key-bind to set a new keyboard shortcut. I have mine set to `Ctrl` + `E` which I really like but you can pick any combo you like!
