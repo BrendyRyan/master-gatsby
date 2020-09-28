@@ -56,15 +56,25 @@ export default {
       topping1: 'toppings.1.name',
       topping2: 'toppings.2.name',
       topping3: 'toppings.3.name',
+      topping4: 'toppings.4.name',
     },
     prepare: ({ title, media, ...toppings }) => {
       // 1. Filter undefined toppings out
       const tops = Object.values(toppings).filter(Boolean);
+      // 1.5 determine if more than 4 toppings
+      let previewOfValidToppings = [];
+      console.log(tops.length);
+      if (tops.length > 4) {
+        previewOfValidToppings = tops.slice(0, 4);
+        previewOfValidToppings.push(` + ${tops.length - 4} more`);
+      } else {
+        previewOfValidToppings = tops;
+      }
       // 2. return the preview object for the pizza
       return {
         title,
         media,
-        subtitle: tops.join(', '),
+        subtitle: previewOfValidToppings.join(', '),
       };
     },
   },
