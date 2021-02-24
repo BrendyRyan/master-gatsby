@@ -3,6 +3,7 @@ import React from 'react';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
 import Pagination from '../components/pagination';
+import SEO from '../components/SEO';
 
 const SlicemasterGrid = styled.div`
   display: grid;
@@ -40,28 +41,31 @@ const SlicemasterStyles = styled.div`
 export default function SlicemastersPage({ data, pageContext }) {
   const slicemasters = data.slicemasters.nodes;
   return (
-    <div>
-      <Pagination
-        pageSize={parseInt(process.env.GATSBY_PAGE_SIZE)}
-        totalCount={data.slicemasters.totalCount}
-        currentPage={pageContext.currentPage || 1}
-        skip={pageContext.skip}
-        base="/slicemasters"
-      />
-      <SlicemasterGrid>
-        {slicemasters.map((person) => (
-          <SlicemasterStyles>
-            <Link to={`slicemaster/${person.slug.current}`}>
-              <h2>
-                <span className="mark">{person.name}</span>
-              </h2>
-            </Link>
-            <Img fluid={person.image.asset.fluid} />
-            <p className="description">{person.description}</p>
-          </SlicemasterStyles>
-        ))}
-      </SlicemasterGrid>
-    </div>
+    <>
+      <SEO title={`Slicemasters - Page ${pageContext.currentPage || 1}`} />
+      <div>
+        <Pagination
+          pageSize={parseInt(process.env.GATSBY_PAGE_SIZE)}
+          totalCount={data.slicemasters.totalCount}
+          currentPage={pageContext.currentPage || 1}
+          skip={pageContext.skip}
+          base="/slicemasters"
+        />
+        <SlicemasterGrid>
+          {slicemasters.map((person) => (
+            <SlicemasterStyles>
+              <Link to={`/slicemaster/${person.slug.current}`}>
+                <h2>
+                  <span className="mark">{person.name}</span>
+                </h2>
+              </Link>
+              <Img fluid={person.image.asset.fluid} />
+              <p className="description">{person.description}</p>
+            </SlicemasterStyles>
+          ))}
+        </SlicemasterGrid>
+      </div>
+    </>
   );
 }
 

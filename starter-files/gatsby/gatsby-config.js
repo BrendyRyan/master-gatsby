@@ -4,11 +4,13 @@ dotenv.config({ path: '.env' });
 
 export default {
   siteMetadata: {
-    title: `Gatsby`,
+    title: `Slicks Slices`,
     siteUrl: `https://gatsby.pizza`,
     description: `Slick's Slices pizza shop`,
+    twitter: '@slicksSlices',
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     {
       // this is the name of the plugin you are adding
