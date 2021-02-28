@@ -31,6 +31,14 @@ const MenuItemStyles = styled.div`
     box-shadow: none;
     line-height: 1rem;
   }
+  @media (max-width: 500px) {
+    button + button {
+      margin-left: 0;
+    }
+    button {
+      margin-right: 1.5rem;
+    }
+  }
 `;
 
 export default MenuItemStyles;

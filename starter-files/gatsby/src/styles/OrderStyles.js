@@ -15,7 +15,7 @@ const OrderStyles = styled.form`
       display: block;
     }
     input {
-      width: 100%;
+      width: 95%;
     }
     &.order,
     &.menu {
@@ -31,6 +31,9 @@ const OrderStyles = styled.form`
     fieldset.menu,
     fieldset.order {
       grid-column: span 2;
+    }
+    button {
+      margin-bottom: 2px;
     }
   }
 `;
