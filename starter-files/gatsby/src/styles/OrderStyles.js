@@ -8,6 +8,8 @@ const OrderStyles = styled.form`
     grid-column: span 2;
     max-height: 600px;
     overflow: auto;
+    display: grid;
+    gap: 1rem;
     align-content: start;
     legend {
       display: block;
@@ -17,8 +19,6 @@ const OrderStyles = styled.form`
     }
     &.order,
     &.menu {
-      display: grid;
-      gap: 1rem;
       grid-column: span 1;
       /* Chrome is weird about Grid and fieldsets, so we add a fixed height to fix it :)  */
       height: 600px;
@@ -30,7 +30,7 @@ const OrderStyles = styled.form`
   @media (max-width: 900px) {
     fieldset.menu,
     fieldset.order {
-      grid-column: span2;
+      grid-column: span 2;
     }
   }
 `;

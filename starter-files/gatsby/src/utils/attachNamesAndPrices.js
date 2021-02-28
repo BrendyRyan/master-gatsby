@@ -4,7 +4,6 @@ import formatMoney from './formatMoney';
 export default function attachNamesAndPrices(order, pizzas) {
   return order.map((item) => {
     const pizza = pizzas.find((pizza) => pizza.id === item.id);
-    console.log(pizza);
     return {
       ...item,
       name: pizza.name,

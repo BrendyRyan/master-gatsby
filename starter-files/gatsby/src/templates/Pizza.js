@@ -7,7 +7,7 @@ import SEO from '../components/SEO';
 const PizzaGrid = styled.div`
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 `;
 
 export default function SinglePizzaPage({ data: { pizza } }) {

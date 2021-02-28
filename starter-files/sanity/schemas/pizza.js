@@ -63,7 +63,6 @@ export default {
       const tops = Object.values(toppings).filter(Boolean);
       // 1.5 determine if more than 4 toppings
       let previewOfValidToppings = [];
-      console.log(tops.length);
       if (tops.length > 4) {
         previewOfValidToppings = tops.slice(0, 4);
         previewOfValidToppings.push(` + ${tops.length - 4} more`);
